@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,700&display=swap');
+
+*{
+  	box-sizing: border-box;
+ 	}
+body{
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	overflow-x: hidden;
+	} 
+img{
+	width: 100%;
+	height: auto;
+    }
+p{
+   opacity: 0.5;
+   }
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	max-width: 100%;
+   }
+/*Header Menu*/
+.navList{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 3rem;
+	padding: 20px;
+    }
+.logo{
+	height: 30px;
+	width: 150px;
+    }
+.navMenu{
+	display: flex;
+	list-style-type: none;
+    }
+.navMenu li a{
+	margin-right: 18px;
+	text-decoration: none;
+	color:#000;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size:0.9375rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+    }
+.navMenu li{
+    margin-bottom: 20px;
+    }
+.navMenu li a:hover{
+	color:#000;
+	opacity: 0.5;
+    }
+.btn,.btn-intro{
+	background: hsl(12, 88%, 59%);
+	padding: 10px 30px;
+	cursor: pointer;
+	border-radius: 20px;
+	outline: 0;
+	border: none;
+	color: #fff;
+	font-size:0.9375rem;
+	font-weight: 500;
+	box-shadow:
+    #ff7f50 4px 7px 8px,
+    #fff -4px -4px 8px;
+	transition: all 0.3s;
+    }
+.btn:hover{
+	opacity: 0.7;
+    }
+/*.hamburger{
+	height: 50px;
+	width: 50px;
+	display: none;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+    }
+*/
+/*.hamburger:focus{
+	outline: 0;
+    }*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  }
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+ }
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  }
+.main::after{
+ 	content: '';
+ 	width: 100%;
+	height:130%;
+ 	position: absolute;
+ 	background: url('images/bg-tablet-pattern.svg');
+ 	background-repeat: no-repeat;
+ 	background-position: right top;
+ 	background-size:auto;
+ 	top: -190px;
+ 	right:-180px;	
+ 	z-index: -3;
+    }
+ .gap{
+ 	padding: 30px 100px;
+    }
+ /*intro*/
+ .intro{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+ 	padding: 10px;
+    }
+ .intro-content{
+ 	width: 45%;	
+    }
+ .intro-content h1{
+ 	font-size: 3rem;
+ 	font-family: 'Be Vietnam', sans-serif;
+ 	line-height: 3.5rem;
+ 	font-weight: 700;
+    }
+ .intro-content p{
+ 	width: 350px;
+ 	max-width: 100%;
+    }
+ .intro-pic{
+ 	width: 45%;
+    }
+/*manage*/
+.manage{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px;
+	position: relative;
+    }
+.manage::after{
+	content: '';
+ 	width: 100%;
+	height:100%;
+ 	position: absolute;
+ 	background: url('images/bg-tablet-pattern.svg');
+ 	background-size: auto;
+ 	background-repeat: no-repeat;
+ 	left: -50%;	
+ 	top: 40%;
+ 	z-index: -8;
+ 	order: 2;
+    }
+.manage-content{
+	width: 45%;	
+    }
+.manage-content h2{
+	font-family: 'Be Vietnam', sans-serif;
+	font-size:1.6875rem;
+	padding: 0;
+	margin: 0;
+    }
+.manage-list{
+	width: 45%;	
+    }
+.manage-section{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+    }
+.headeing{
+	display: flex;
+	flex-direction: column;
+	}
+.headeing h5{
+	padding: 0;
+    margin: 0;
+    font-size: 1rem;   
+    }
+.headeing p{
+	font-family: 'Be Vietnam', sans-serif;
+	font-size:0.9375rem;	
+	width: 400px;
+    }
+.counter label{
+	padding: 5px 20px 10px;
+	background: hsl(12, 88%, 59%);
+	border-radius: 20px;
+	margin-right: 15px;
+	color: #fff;    
+    box-shadow:#ff7f50 4px 7px 8px,#fff -4px -4px 8px;
+    }
+/*testimonial-main*/
+.testimonial-section{
+   text-align: center;
+   }
+.testimonial-main{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 5px;
+    }
+.testimonial-title{
+	text-align: center;
+	margin-bottom: 60px;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 2rem;
+    }
+.testimonial-text{
+	padding: 10px;
+	background: hsl(0, 0%, 98%);
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+	flex-wrap: wrap;
+    }
+.testimonial-text img{
+	height: 35px;
+	width: 35px;
+	margin-top: -100px;
+	text-align: center;
+    }
+.testimonial-text h6{
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+    }
+.testimonial-text p{
+    font-family: 'Be Vietnam', sans-serif;
+	font-size: 0.875rem;
+    }
+/*Team work*/
+.team-work{
+	background-color: hsl(12, 88%, 59%);
+	padding-top: 30px;
+	padding-bottom:30px;
+    }
+.team-text{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10px;
+    }
+.team-text h4{
+	color: #fff;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 2rem;
+	width: 450px;
+	max-width: 100%;
+	line-height: 1.1;
+    }
+.btn-team{
+	height: 40px;
+	width: 180px;
+	background: #fff;
+	padding: 5px 40px ;
+	cursor: pointer;
+	border-radius: 50px;
+	outline: 0;
+	border: none;
+	color: #EE5A24;
+	font-size:0.9375rem;
+	font-weight: 500;
+	box-shadow:#ff7f50 4px 7px 8px,#ff7f50 -4px -4px 8px;
+	transition: all 0.3s;	
+    }
+footer{
+	background-color: #000;
+	padding: 50px;
+	}
+.footer-main{
+	display: flex;
+	flex-wrap: wrap;
+    }
+.footer-section{
+	width: 400px;
+	max-width: 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+    }
+input{
+	padding: 8px 20px;
+	border-radius: 30px;
+	border: none;
+	margin-bottom: 5px;
+    }
+.navlist-footer{
+	list-style-type: none;
+	width: 400px;
+	margin: 0;
+	padding: 0;
+    }
+.navlist-footer li a{
+    text-decoration: none;
+    color: #fff;
+    }
+.navlist{
+	display: flex;
+	}
+.btn-go{
+	padding: 8px 20px;
+	border-radius: 20px;
+	border: none;
+	background-color: hsl(12, 88%, 59%);
+	color: #fff;
+    }
+.social{
+	display: flex;
+    }
+.social li{
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+    }
+.social a{
+	color: #fff;
+	margin-right: 3px;
+	font-size: 1.5rem;
+	text-decoration: none;	
+    }
+
+@media screen and (max-width: 800px)
+{
+.main::after{
+     background: url('images/bg-tablet-pattern.svg');
+    }
+.manage::after{
+ 	display: none;
+    }
+.intro{
+	flex-wrap: wrap-reverse;
+	text-align: center;
+	width: 100%;
+    }
+.intro-content{
+	width: 100%;
+    }
+.intro-content h1{
+ 	font-size: 2.3rem;
+ 	line-height: 1.3;
+ 	font-weight: 700;
+	 }
+.intro-pic{
+	width: 100%;
+	}
+.navMenu{
+	display: none;
+	}
+
+.navMenu.show {
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;	
+	width: 100%;
+	height: 100%;
+	
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	z-index: 5;
+    }	
+.btn{
+	display: none;
+    }
+.hamburger{
+	display: block;
+    }
+.hamburger-close{
+	display: none;
+} 
+.manage-content{
+    width: 100%;
+    text-align: center;
+    }
+.manage-list{
+    width: 100%;
+    }
+.headeing p{
+	width: 100%;
+    }
+.headeing h5{
+	background-color: hsl(13, 100%, 96%);
+	padding: 5px 20px;
+	z-index: -3;
+	margin-left: -15px;
+    }
+.counter label{
+	margin-right: 0;
+    }
+.testimonial-main{
+	flex-wrap: wrap;
+    }
+.team-text{
+	text-align: center;
+	justify-content: center;
+    }
+.footer-main{
+	flex-direction: column-reverse;
+	text-align: center;
+    }
+.social{
+	justify-content: center; 
+	margin-bottom: 15px;
+    }
+.social-details{
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+    }
+ }
