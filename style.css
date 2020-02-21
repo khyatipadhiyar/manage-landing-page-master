@@ -272,7 +272,7 @@ p{
 	color: #EE5A24;
 	font-size:0.9375rem;
 	font-weight: 500;
-	box-shadow:#ff7f50 4px 7px 8px,#ff7f50 -4px -4px 8px;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.3), -9px -9px 16px  rgba(255,255,255, 0.1);
 	transition: all 0.3s;	
     }
 footer{
