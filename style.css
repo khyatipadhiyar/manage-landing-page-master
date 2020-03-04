@@ -337,6 +337,7 @@ input{
 {
 .main::after{
      background: url('images/bg-tablet-pattern.svg');
+     overflow-x: hidden;
     }
 .manage::after{
  	display: none;
