@@ -335,9 +335,12 @@ input{
 
 @media screen and (max-width: 800px)
 {
+	body{
+		overflow-x: hidden; 
+	}
 .main::after{
      background: url('images/bg-tablet-pattern.svg');
-     overflow-x: hidden;
+    
     }
 .manage::after{
  	display: none;
