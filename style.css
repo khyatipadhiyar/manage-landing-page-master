@@ -114,6 +114,7 @@ p{
  	top: -190px;
  	right:-180px;	
  	z-index: -3;
+	overflow-y: hidden;
     }
  .gap{
  	padding: 30px 100px;
