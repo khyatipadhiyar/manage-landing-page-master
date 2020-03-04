@@ -21,7 +21,7 @@ p{
 	margin: 0 auto;
 	width: 1200px;
 	max-width: 100%;
-	overflow-x: hidden
+	
    }
 /*Header Menu*/
 .navList{
@@ -115,7 +115,7 @@ p{
  	top: -190px;
  	right:-180px;	
  	z-index: -3;
-	overflow-y: hidden;
+	
     }
  .gap{
  	padding: 30px 100px;
